@@ -42,7 +42,7 @@ docker build --tag $IMAGE_NAME .
 ## Docker 이미지 Docker hub에 등록
 
 ```sh
-docker login -u $DOCKER_HUB_ID --password-stdin docker.io
+docker login -u $DOCKER_HUB_ID
 docker tag $IMAGE_NAME $DOCKER_HUB_ID/$IMAGE_NAME
 docker push $DOCKER_HUB_ID/$IMAGE_NAME
 ```
