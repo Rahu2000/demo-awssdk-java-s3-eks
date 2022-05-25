@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: my-pod
-spec:
-  serviceAccountName: s3-loader
-  containers:
-  - image: rahu2000/demo-s3-java
-    name: s3-loader
