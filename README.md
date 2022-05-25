@@ -76,3 +76,9 @@ spec:
     name: s3-loader
 EOF
 ```
+
+### 로그 확인
+
+```sh
+kubectl logs -f pod/my-pod -n $NAMESPACE
+```
