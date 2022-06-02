@@ -36,7 +36,7 @@ mvn clean install
 ## Docker 이미지 생성
 
 ```sh
-docker build --tag $IMAGE_NAME .
+docker build --tag $DOCKER_HUB_ID/$IMAGE_NAME:$TAG .
 ```
 
 ## Docker 이미지 Docker hub에 등록
@@ -72,7 +72,7 @@ metadata:
 spec:
   serviceAccountName: $SERVICEACCOUNT
   containers:
-  - image: $DOCKER_HUB_ID/$IMAGE_NAME
+  - image: $DOCKER_HUB_ID/$IMAGE_NAME:$TAG
     name: s3-loader
 EOF
 ```
